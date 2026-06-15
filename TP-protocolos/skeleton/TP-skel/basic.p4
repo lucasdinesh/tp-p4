@@ -178,6 +178,7 @@ apply {
         hdr.int_pai.setValid();
         hdr.int_pai.Tamanho_Filho = 128;
         hdr.int_pai.Quantidade_Filhos = 0;
+        hdr.ipv4.protocol = PROTO_INT;
 
         // primeiro hop conta como "pai + filho"
         hdr.ipv4.totalLen = hdr.ipv4.totalLen + 24;

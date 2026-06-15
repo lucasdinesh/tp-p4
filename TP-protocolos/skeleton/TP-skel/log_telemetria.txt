@@ -1,0 +1,2297 @@
+Sniffing na interface eth0 aguardando pacotes INT...
+
+========================================
+ PACOTE COM TELEMETRIA (INT) RECEBIDO!
+========================================
+###[ Ethernet ]### 
+  dst       = 08:00:00:00:02:22
+  src       = 08:00:00:00:02:00
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 85
+     id        = 1
+     flags     = 
+     frag      = 0
+     ttl       = 62
+     proto     = 253
+     chksum    = 0x64a9
+     src       = 10.0.1.1
+     dst       = 10.0.2.2
+     \options   \
+###[ IntPai ]### 
+        Tamanho_Filho= 128
+        Quantidade_Filhos= 2
+###[ IntFilho ]### 
+           ID_Switch = 2
+           Porta_Entrada= 2
+           Porta_Saida= 1
+           Timestamp = 182053717
+           padding   = 0
+###[ IntFilho ]### 
+              ID_Switch = 1
+              Porta_Entrada= 1
+              Porta_Saida= 2
+              Timestamp = 182230314
+              padding   = 0
+###[ IntFilho ]### 
+                 ID_Switch = 4061332690
+                 Porta_Entrada= 0
+                 Porta_Saida= 0
+                 Timestamp = 1
+                 padding   = 268574720
+###[ Raw ]### 
+                    load      = '>#\x00\x00hello'
+
+
+========================================
+ PACOTE COM TELEMETRIA (INT) RECEBIDO!
+========================================
+###[ Ethernet ]### 
+  dst       = 08:00:00:00:02:00
+  src       = 08:00:00:00:02:22
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0xc0
+     len       = 113
+     id        = 35439
+     flags     = 
+     frag      = 0
+     ttl       = 64
+     proto     = icmp
+     chksum    = 0xd85a
+     src       = 10.0.2.2
+     dst       = 10.0.1.1
+     \options   \
+###[ ICMP ]### 
+        type      = dest-unreach
+        code      = protocol-unreachable
+        chksum    = 0xea8c
+        reserved  = 0
+        length    = 0
+        nexthopmtu= 0
+        unused    = ''
+###[ IP in ICMP ]### 
+           version   = 4
+           ihl       = 5
+           tos       = 0x0
+           len       = 85
+           id        = 1
+           flags     = 
+           frag      = 0
+           ttl       = 62
+           proto     = 253
+           chksum    = 0x64a9
+           src       = 10.0.1.1
+           dst       = 10.0.2.2
+           \options   \
+###[ IntPai ]### 
+              Tamanho_Filho= 128
+              Quantidade_Filhos= 2
+###[ IntFilho ]### 
+                 ID_Switch = 2
+                 Porta_Entrada= 2
+                 Porta_Saida= 1
+                 Timestamp = 182053717
+                 padding   = 0
+###[ IntFilho ]### 
+                    ID_Switch = 1
+                    Porta_Entrada= 1
+                    Porta_Saida= 2
+                    Timestamp = 182230314
+                    padding   = 0
+###[ IntFilho ]### 
+                       ID_Switch = 4061332690
+                       Porta_Entrada= 0
+                       Porta_Saida= 0
+                       Timestamp = 1
+                       padding   = 268574720
+###[ Raw ]### 
+                          load      = '>#\x00\x00hello'
+
+
+========================================
+ PACOTE COM TELEMETRIA (INT) RECEBIDO!
+========================================
+###[ Ethernet ]### 
+  dst       = 08:00:00:00:02:22
+  src       = 08:00:00:00:02:00
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0xc0
+     len       = 221
+     id        = 17258
+     flags     = 
+     frag      = 0
+     ttl       = 62
+     proto     = 253
+     chksum    = 0x1ff8
+     src       = 10.0.1.1
+     dst       = 10.0.2.2
+     \options   \
+###[ IntPai ]### 
+        Tamanho_Filho= 128
+        Quantidade_Filhos= 2
+###[ IntFilho ]### 
+           ID_Switch = 2
+           Porta_Entrada= 2
+           Porta_Saida= 1
+           Timestamp = 182058717
+           padding   = 0
+###[ IntFilho ]### 
+              ID_Switch = 1
+              Porta_Entrada= 1
+              Porta_Saida= 2
+              Timestamp = 182237024
+              padding   = 0
+###[ IntFilho ]### 
+                 ID_Switch = 50482208
+                 Porta_Entrada= 0
+                 Porta_Saida= 0
+                 Timestamp = 4680843878
+                 padding   = 175046656
+###[ IntFilho ]### 
+                    ID_Switch = 1056823606
+                    Porta_Entrada= 20
+                    Porta_Saida= 0
+                    Timestamp = 8831123850244
+                    padding   = 128
+###[ IntFilho ]### 
+                       ID_Switch = 2
+                       Porta_Entrada= 0
+                       Porta_Saida= 0
+                       Timestamp = 17247043584
+                       padding   = 45559035
+###[ IntFilho ]### 
+                          ID_Switch = 2147483648
+                          Porta_Entrada= 0
+                          Porta_Saida= 0
+                          Timestamp = 34393423872
+                          padding   = 45513838
+###[ IntFilho ]### 
+                             ID_Switch = 3221225472
+                             Porta_Entrada= 6
+                             Porta_Saida= 11
+                             Timestamp = 187123135152129
+                             padding   = 83886165
+###[ IntFilho ]### 
+                                ID_Switch = 65536
+                                Porta_Entrada= 125
+                                Porta_Saida= 501
+                                Timestamp = 161233743381508
+                                padding   = 167772674
+###[ IntFilho ]### 
+                                   ID_Switch = 128
+                                   Porta_Entrada= 0
+                                   Porta_Saida= 0
+                                   Timestamp = 34359738376
+                                   padding   = 16793600
+###[ IntFilho ]### 
+                                      ID_Switch = 45513429
+                                      Porta_Entrada= 128
+                                      Porta_Saida= 0
+                                      Timestamp = 4
+                                      padding   = 8421376
+###[ IntFilho ]### 
+                                         ID_Switch = 45557578
+                                         Porta_Entrada= 256
+                                         Porta_Saida= 0
+                                         Timestamp = 16245330760
+                                         padding   = 0
+###[ IntFilho ]### 
+                                            ID_Switch = 0
+                                            Porta_Entrada= 160
+                                            Porta_Saida= 8
+                                            Timestamp = 140741658279937
+                                            padding   = 677735532
+###[ Raw ]### 
+                                               load      = 'o'
+
+
+========================================
+ PACOTE COM TELEMETRIA (INT) RECEBIDO!
+========================================
+###[ Ethernet ]### 
+  dst       = 08:00:00:00:02:00
+  src       = 08:00:00:00:02:22
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0xc0
+     len       = 249
+     id        = 35444
+     flags     = 
+     frag      = 0
+     ttl       = 64
+     proto     = icmp
+     chksum    = 0xd7cd
+     src       = 10.0.2.2
+     dst       = 10.0.1.1
+     \options   \
+###[ ICMP ]### 
+        type      = dest-unreach
+        code      = protocol-unreachable
+        chksum    = 0x47fb
+        reserved  = 0
+        length    = 0
+        nexthopmtu= 0
+        unused    = ''
+###[ IP in ICMP ]### 
+           version   = 4
+           ihl       = 5
+           tos       = 0xc0
+           len       = 221
+           id        = 17258
+           flags     = 
+           frag      = 0
+           ttl       = 62
+           proto     = 253
+           chksum    = 0x1ff8
+           src       = 10.0.1.1
+           dst       = 10.0.2.2
+           \options   \
+###[ IntPai ]### 
+              Tamanho_Filho= 128
+              Quantidade_Filhos= 2
+###[ IntFilho ]### 
+                 ID_Switch = 2
+                 Porta_Entrada= 2
+                 Porta_Saida= 1
+                 Timestamp = 182058717
+                 padding   = 0
+###[ IntFilho ]### 
+                    ID_Switch = 1
+                    Porta_Entrada= 1
+                    Porta_Saida= 2
+                    Timestamp = 182237024
+                    padding   = 0
+###[ IntFilho ]### 
+                       ID_Switch = 50482208
+                       Porta_Entrada= 0
+                       Porta_Saida= 0
+                       Timestamp = 4680843878
+                       padding   = 175046656
+###[ IntFilho ]### 
+                          ID_Switch = 1056823606
+                          Porta_Entrada= 20
+                          Porta_Saida= 0
+                          Timestamp = 8831123850244
+                          padding   = 128
+###[ IntFilho ]### 
+                             ID_Switch = 2
+                             Porta_Entrada= 0
+                             Porta_Saida= 0
+                             Timestamp = 17247043584
+                             padding   = 45559035
+###[ IntFilho ]### 
+                                ID_Switch = 2147483648
+                                Porta_Entrada= 0
+                                Porta_Saida= 0
+                                Timestamp = 34393423872
+                                padding   = 45513838
+###[ IntFilho ]### 
+                                   ID_Switch = 3221225472
+                                   Porta_Entrada= 6
+                                   Porta_Saida= 11
+                                   Timestamp = 187123135152129
+                                   padding   = 83886165
+###[ IntFilho ]### 
+                                      ID_Switch = 65536
+                                      Porta_Entrada= 125
+                                      Porta_Saida= 501
+                                      Timestamp = 161233743381508
+                                      padding   = 167772674
+###[ IntFilho ]### 
+                                         ID_Switch = 128
+                                         Porta_Entrada= 0
+                                         Porta_Saida= 0
+                                         Timestamp = 34359738376
+                                         padding   = 16793600
+###[ IntFilho ]### 
+                                            ID_Switch = 45513429
+                                            Porta_Entrada= 128
+                                            Porta_Saida= 0
+                                            Timestamp = 4
+                                            padding   = 8421376
+###[ IntFilho ]### 
+                                               ID_Switch = 45557578
+                                               Porta_Entrada= 256
+                                               Porta_Saida= 0
+                                               Timestamp = 16245330760
+                                               padding   = 0
+###[ IntFilho ]### 
+                                                  ID_Switch = 0
+                                                  Porta_Entrada= 160
+                                                  Porta_Saida= 8
+                                                  Timestamp = 140741658279937
+                                                  padding   = 677735532
+###[ Raw ]### 
+                                                     load      = 'o'
+
+
+========================================
+ PACOTE COM TELEMETRIA (INT) RECEBIDO!
+========================================
+###[ Ethernet ]### 
+  dst       = 08:00:00:00:02:22
+  src       = 08:00:00:00:02:00
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0xc0
+     len       = 357
+     id        = 17260
+     flags     = 
+     frag      = 0
+     ttl       = 62
+     proto     = 253
+     chksum    = 0x1f6e
+     src       = 10.0.1.1
+     dst       = 10.0.2.2
+     \options   \
+###[ IntPai ]### 
+        Tamanho_Filho= 128
+        Quantidade_Filhos= 2
+###[ IntFilho ]### 
+           ID_Switch = 2
+           Porta_Entrada= 2
+           Porta_Saida= 1
+           Timestamp = 182062308
+           padding   = 0
+###[ IntFilho ]### 
+              ID_Switch = 1
+              Porta_Entrada= 1
+              Porta_Saida= 2
+              Timestamp = 182240797
+              padding   = 0
+###[ IntFilho ]### 
+                 ID_Switch = 50463735
+                 Porta_Entrada= 0
+                 Porta_Saida= 0
+                 Timestamp = 4680844422
+                 padding   = 175374336
+###[ IntFilho ]### 
+                    ID_Switch = 1056823465
+                    Porta_Entrada= 20
+                    Porta_Saida= 0
+                    Timestamp = 8831123850244
+                    padding   = 128
+###[ IntFilho ]### 
+                       ID_Switch = 2
+                       Porta_Entrada= 0
+                       Porta_Saida= 0
+                       Timestamp = 17247043584
+                       padding   = 45560018
+###[ IntFilho ]### 
+                          ID_Switch = 2147483648
+                          Porta_Entrada= 0
+                          Porta_Saida= 0
+                          Timestamp = 34393423872
+                          padding   = 45514945
+###[ IntFilho ]### 
+                             ID_Switch = 0
+                             Porta_Entrada= 6
+                             Porta_Saida= 9
+                             Timestamp = 35098472742913
+                             padding   = 96469213
+###[ IntFilho ]### 
+                                ID_Switch = 1131020288
+                                Porta_Entrada= 125
+                                Porta_Saida= 500
+                                Timestamp = 140600720491524
+                                padding   = 167772674
+###[ IntFilho ]### 
+                                   ID_Switch = 128
+                                   Porta_Entrada= 0
+                                   Porta_Saida= 0
+                                   Timestamp = 34359738376
+                                   padding   = 16793600
+###[ IntFilho ]### 
+                                      ID_Switch = 45514679
+                                      Porta_Entrada= 128
+                                      Porta_Saida= 0
+                                      Timestamp = 4
+                                      padding   = 8421376
+###[ IntFilho ]### 
+                                         ID_Switch = 45559256
+                                         Porta_Entrada= 0
+                                         Porta_Saida= 0
+                                         Timestamp = 201928832
+                                         padding   = 0
+###[ IntFilho ]### 
+                                            ID_Switch = 1170210969
+                                            Porta_Entrada= 276
+                                            Porta_Saida= 444
+                                            Timestamp = 4227294424
+                                            padding   = 167772674
+###[ IntFilho ]### 
+                                               ID_Switch = 167772417
+                                               Porta_Entrada= 0
+                                               Porta_Saida= 0
+                                               Timestamp = 2199023255560
+                                               padding   = 1
+###[ IntFilho ]### 
+                                                  ID_Switch = 16793600
+                                                  Porta_Entrada= 5
+                                                  Porta_Saida= 220
+                                                  Timestamp = 197834783588352
+                                                  padding   = 2
+###[ IntFilho ]### 
+                                                     ID_Switch = 8421376
+                                                     Porta_Entrada= 5
+                                                     Porta_Saida= 217
+                                                     Timestamp = 265785461178368
+                                                     padding   = 50522764
+###[ IntFilho ]### 
+                                                        ID_Switch = 0
+                                                        Porta_Entrada= 138
+                                                        Porta_Saida= 0
+                                                        Timestamp = 1460289142784
+                                                        padding   = 1056793769
+###[ IntFilho ]### 
+                                                           ID_Switch = 167772417
+                                                           Porta_Entrada= 20
+                                                           Porta_Saida= 0
+                                                           Timestamp = 8830452761088
+                                                           padding   = 2
+###[ IntFilho ]### 
+                                                              ID_Switch = 2
+                                                              Porta_Entrada= 2
+                                                              Porta_Saida= 1
+                                                              Timestamp = 182053717
+                                                              padding   = 0
+###[ IntFilho ]### 
+                                                                 ID_Switch = 1
+                                                                 Porta_Entrada= 1
+                                                                 Porta_Saida= 2
+                                                                 Timestamp = 182230314
+                                                                 padding   = 0
+###[ IntFilho ]### 
+                                                                    ID_Switch = 4061332690
+                                                                    Porta_Entrada= 0
+                                                                    Porta_Saida= 0
+                                                                    Timestamp = 1
+                                                                    padding   = 268574720
+###[ Raw ]### 
+                                                                       load      = '>#\x00\x00hello'
+
+
+========================================
+ PACOTE COM TELEMETRIA (INT) RECEBIDO!
+========================================
+###[ Ethernet ]### 
+  dst       = 08:00:00:00:02:00
+  src       = 08:00:00:00:02:22
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0xc0
+     len       = 385
+     id        = 35446
+     flags     = 
+     frag      = 0
+     ttl       = 64
+     proto     = icmp
+     chksum    = 0xd743
+     src       = 10.0.2.2
+     dst       = 10.0.1.1
+     \options   \
+###[ ICMP ]### 
+        type      = dest-unreach
+        code      = protocol-unreachable
+        chksum    = 0x40ca
+        reserved  = 0
+        length    = 0
+        nexthopmtu= 0
+        unused    = ''
+###[ IP in ICMP ]### 
+           version   = 4
+           ihl       = 5
+           tos       = 0xc0
+           len       = 357
+           id        = 17260
+           flags     = 
+           frag      = 0
+           ttl       = 62
+           proto     = 253
+           chksum    = 0x1f6e
+           src       = 10.0.1.1
+           dst       = 10.0.2.2
+           \options   \
+###[ IntPai ]### 
+              Tamanho_Filho= 128
+              Quantidade_Filhos= 2
+###[ IntFilho ]### 
+                 ID_Switch = 2
+                 Porta_Entrada= 2
+                 Porta_Saida= 1
+                 Timestamp = 182062308
+                 padding   = 0
+###[ IntFilho ]### 
+                    ID_Switch = 1
+                    Porta_Entrada= 1
+                    Porta_Saida= 2
+                    Timestamp = 182240797
+                    padding   = 0
+###[ IntFilho ]### 
+                       ID_Switch = 50463735
+                       Porta_Entrada= 0
+                       Porta_Saida= 0
+                       Timestamp = 4680844422
+                       padding   = 175374336
+###[ IntFilho ]### 
+                          ID_Switch = 1056823465
+                          Porta_Entrada= 20
+                          Porta_Saida= 0
+                          Timestamp = 8831123850244
+                          padding   = 128
+###[ IntFilho ]### 
+                             ID_Switch = 2
+                             Porta_Entrada= 0
+                             Porta_Saida= 0
+                             Timestamp = 17247043584
+                             padding   = 45560018
+###[ IntFilho ]### 
+                                ID_Switch = 2147483648
+                                Porta_Entrada= 0
+                                Porta_Saida= 0
+                                Timestamp = 34393423872
+                                padding   = 45514945
+###[ IntFilho ]### 
+                                   ID_Switch = 0
+                                   Porta_Entrada= 6
+                                   Porta_Saida= 9
+                                   Timestamp = 35098472742913
+                                   padding   = 96469213
+###[ IntFilho ]### 
+                                      ID_Switch = 1131020288
+                                      Porta_Entrada= 125
+                                      Porta_Saida= 500
+                                      Timestamp = 140600720491524
+                                      padding   = 167772674
+###[ IntFilho ]### 
+                                         ID_Switch = 128
+                                         Porta_Entrada= 0
+                                         Porta_Saida= 0
+                                         Timestamp = 34359738376
+                                         padding   = 16793600
+###[ IntFilho ]### 
+                                            ID_Switch = 45514679
+                                            Porta_Entrada= 128
+                                            Porta_Saida= 0
+                                            Timestamp = 4
+                                            padding   = 8421376
+###[ IntFilho ]### 
+                                               ID_Switch = 45559256
+                                               Porta_Entrada= 0
+                                               Porta_Saida= 0
+                                               Timestamp = 201928832
+                                               padding   = 0
+###[ IntFilho ]### 
+                                                  ID_Switch = 1170210969
+                                                  Porta_Entrada= 276
+                                                  Porta_Saida= 444
+                                                  Timestamp = 4227294424
+                                                  padding   = 167772674
+###[ IntFilho ]### 
+                                                     ID_Switch = 167772417
+                                                     Porta_Entrada= 0
+                                                     Porta_Saida= 0
+                                                     Timestamp = 2199023255560
+                                                     padding   = 1
+###[ IntFilho ]### 
+                                                        ID_Switch = 16793600
+                                                        Porta_Entrada= 5
+                                                        Porta_Saida= 220
+                                                        Timestamp = 197834783588352
+                                                        padding   = 2
+###[ IntFilho ]### 
+                                                           ID_Switch = 8421376
+                                                           Porta_Entrada= 5
+                                                           Porta_Saida= 217
+                                                           Timestamp = 265785461178368
+                                                           padding   = 50522764
+###[ IntFilho ]### 
+                                                              ID_Switch = 0
+                                                              Porta_Entrada= 138
+                                                              Porta_Saida= 0
+                                                              Timestamp = 1460289142784
+                                                              padding   = 1056793769
+###[ IntFilho ]### 
+                                                                 ID_Switch = 167772417
+                                                                 Porta_Entrada= 20
+                                                                 Porta_Saida= 0
+                                                                 Timestamp = 8830452761088
+                                                                 padding   = 2
+###[ IntFilho ]### 
+                                                                    ID_Switch = 2
+                                                                    Porta_Entrada= 2
+                                                                    Porta_Saida= 1
+                                                                    Timestamp = 182053717
+                                                                    padding   = 0
+###[ IntFilho ]### 
+                                                                       ID_Switch = 1
+                                                                       Porta_Entrada= 1
+                                                                       Porta_Saida= 2
+                                                                       Timestamp = 182230314
+                                                                       padding   = 0
+###[ IntFilho ]### 
+                                                                          ID_Switch = 4061332690
+                                                                          Porta_Entrada= 0
+                                                                          Porta_Saida= 0
+                                                                          Timestamp = 1
+                                                                          padding   = 268574720
+###[ Raw ]### 
+                                                                             load      = '>#\x00\x00hello'
+
+
+========================================
+ PACOTE COM TELEMETRIA (INT) RECEBIDO!
+========================================
+###[ Ethernet ]### 
+  dst       = 08:00:00:00:02:22
+  src       = 08:00:00:00:02:00
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0xc0
+     len       = 493
+     id        = 17261
+     flags     = 
+     frag      = 0
+     ttl       = 62
+     proto     = 253
+     chksum    = 0x1ee5
+     src       = 10.0.1.1
+     dst       = 10.0.2.2
+     \options   \
+###[ IntPai ]### 
+        Tamanho_Filho= 128
+        Quantidade_Filhos= 2
+###[ IntFilho ]### 
+           ID_Switch = 2
+           Porta_Entrada= 2
+           Porta_Saida= 1
+           Timestamp = 182078035
+           padding   = 0
+###[ IntFilho ]### 
+              ID_Switch = 1
+              Porta_Entrada= 1
+              Porta_Saida= 2
+              Timestamp = 182249128
+              padding   = 0
+###[ IntFilho ]### 
+                 ID_Switch = 50493411
+                 Porta_Entrada= 0
+                 Porta_Saida= 0
+                 Timestamp = 4680844966
+                 padding   = 175505408
+###[ IntFilho ]### 
+                    ID_Switch = 1056823327
+                    Porta_Entrada= 20
+                    Porta_Saida= 0
+                    Timestamp = 8831123850244
+                    padding   = 128
+###[ IntFilho ]### 
+                       ID_Switch = 2
+                       Porta_Entrada= 0
+                       Porta_Saida= 0
+                       Timestamp = 17247043584
+                       padding   = 45561794
+###[ IntFilho ]### 
+                          ID_Switch = 3221225472
+                          Porta_Entrada= 0
+                          Porta_Saida= 0
+                          Timestamp = 34393423872
+                          padding   = 45516260
+###[ IntFilho ]### 
+                             ID_Switch = 1073741824
+                             Porta_Entrada= 6
+                             Porta_Saida= 9
+                             Timestamp = 3470333575169
+                             padding   = 96469349
+###[ IntFilho ]### 
+                                ID_Switch = 1131151360
+                                Porta_Entrada= 125
+                                Porta_Saida= 500
+                                Timestamp = 138229898544132
+                                padding   = 167772674
+###[ IntFilho ]### 
+                                   ID_Switch = 128
+                                   Porta_Entrada= 0
+                                   Porta_Saida= 0
+                                   Timestamp = 34359738376
+                                   padding   = 16793600
+###[ IntFilho ]### 
+                                      ID_Switch = 45515577
+                                      Porta_Entrada= 0
+                                      Porta_Saida= 0
+                                      Timestamp = 4
+                                      padding   = 8421376
+###[ IntFilho ]### 
+                                         ID_Switch = 45560199
+                                         Porta_Entrada= 128
+                                         Porta_Saida= 0
+                                         Timestamp = 201854940
+                                         padding   = 0
+###[ IntFilho ]### 
+                                            ID_Switch = 1170211105
+                                            Porta_Entrada= 276
+                                            Porta_Saida= 464
+                                            Timestamp = 4227293860
+                                            padding   = 167772674
+###[ IntFilho ]### 
+                                               ID_Switch = 167772417
+                                               Porta_Entrada= 0
+                                               Porta_Saida= 0
+                                               Timestamp = 2199023255560
+                                               padding   = 1
+###[ IntFilho ]### 
+                                                  ID_Switch = 16793600
+                                                  Porta_Entrada= 5
+                                                  Porta_Saida= 220
+                                                  Timestamp = 214722594996224
+                                                  padding   = 2
+###[ IntFilho ]### 
+                                                     ID_Switch = 8421376
+                                                     Porta_Entrada= 5
+                                                     Porta_Saida= 218
+                                                     Timestamp = 3315714752512
+                                                     padding   = 50481147
+###[ IntFilho ]### 
+                                                        ID_Switch = 0
+                                                        Porta_Entrada= 139
+                                                        Porta_Saida= 256
+                                                        Timestamp = 3801275170816
+                                                        padding   = 1056776184
+###[ IntFilho ]### 
+                                                           ID_Switch = 167772417
+                                                           Porta_Entrada= 20
+                                                           Porta_Saida= 0
+                                                           Timestamp = 8830452761088
+                                                           padding   = 2
+###[ IntFilho ]### 
+                                                              ID_Switch = 2
+                                                              Porta_Entrada= 2
+                                                              Porta_Saida= 1
+                                                              Timestamp = 182058717
+                                                              padding   = 0
+###[ IntFilho ]### 
+                                                                 ID_Switch = 1
+                                                                 Porta_Entrada= 1
+                                                                 Porta_Saida= 2
+                                                                 Timestamp = 182237024
+                                                                 padding   = 0
+###[ IntFilho ]### 
+                                                                    ID_Switch = 50482208
+                                                                    Porta_Entrada= 0
+                                                                    Porta_Saida= 0
+                                                                    Timestamp = 4680843878
+                                                                    padding   = 175046656
+###[ IntFilho ]### 
+                                                                       ID_Switch = 1056823606
+                                                                       Porta_Entrada= 20
+                                                                       Porta_Saida= 0
+                                                                       Timestamp = 8831123850244
+                                                                       padding   = 128
+###[ IntFilho ]### 
+                                                                          ID_Switch = 2
+                                                                          Porta_Entrada= 0
+                                                                          Porta_Saida= 0
+                                                                          Timestamp = 17247043584
+                                                                          padding   = 45559035
+###[ IntFilho ]### 
+                                                                             ID_Switch = 2147483648
+                                                                             Porta_Entrada= 0
+                                                                             Porta_Saida= 0
+                                                                             Timestamp = 34393423872
+                                                                             padding   = 45513838
+###[ IntFilho ]### 
+                                                                                ID_Switch = 3221225472
+                                                                                Porta_Entrada= 6
+                                                                                Porta_Saida= 11
+                                                                                Timestamp = 187123135152129
+                                                                                padding   = 83886165
+###[ IntFilho ]### 
+                                                                                   ID_Switch = 65536
+                                                                                   Porta_Entrada= 125
+                                                                                   Porta_Saida= 501
+                                                                                   Timestamp = 161233743381508
+                                                                                   padding   = 167772674
+###[ IntFilho ]### 
+                                                                                      ID_Switch = 128
+                                                                                      Porta_Entrada= 0
+                                                                                      Porta_Saida= 0
+                                                                                      Timestamp = 34359738376
+                                                                                      padding   = 16793600
+###[ IntFilho ]### 
+                                                                                         ID_Switch = 45513429
+                                                                                         Porta_Entrada= 128
+                                                                                         Porta_Saida= 0
+                                                                                         Timestamp = 4
+                                                                                         padding   = 8421376
+###[ IntFilho ]### 
+                                                                                            ID_Switch = 45557578
+                                                                                            Porta_Entrada= 256
+                                                                                            Porta_Saida= 0
+                                                                                            Timestamp = 16245330760
+                                                                                            padding   = 0
+###[ IntFilho ]### 
+                                                                                               ID_Switch = 0
+                                                                                               Porta_Entrada= 160
+                                                                                               Porta_Saida= 8
+                                                                                               Timestamp = 140741658279937
+                                                                                               padding   = 677735532
+###[ Raw ]### 
+                                                                                                  load      = 'o'
+
+
+========================================
+ PACOTE COM TELEMETRIA (INT) RECEBIDO!
+========================================
+###[ Ethernet ]### 
+  dst       = 08:00:00:00:02:00
+  src       = 08:00:00:00:02:22
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0xc0
+     len       = 521
+     id        = 35448
+     flags     = 
+     frag      = 0
+     ttl       = 64
+     proto     = icmp
+     chksum    = 0xd6b9
+     src       = 10.0.2.2
+     dst       = 10.0.1.1
+     \options   \
+###[ ICMP ]### 
+        type      = dest-unreach
+        code      = protocol-unreachable
+        chksum    = 0xa94b
+        reserved  = 0
+        length    = 0
+        nexthopmtu= 0
+        unused    = ''
+###[ IP in ICMP ]### 
+           version   = 4
+           ihl       = 5
+           tos       = 0xc0
+           len       = 493
+           id        = 17261
+           flags     = 
+           frag      = 0
+           ttl       = 62
+           proto     = 253
+           chksum    = 0x1ee5
+           src       = 10.0.1.1
+           dst       = 10.0.2.2
+           \options   \
+###[ IntPai ]### 
+              Tamanho_Filho= 128
+              Quantidade_Filhos= 2
+###[ IntFilho ]### 
+                 ID_Switch = 2
+                 Porta_Entrada= 2
+                 Porta_Saida= 1
+                 Timestamp = 182078035
+                 padding   = 0
+###[ IntFilho ]### 
+                    ID_Switch = 1
+                    Porta_Entrada= 1
+                    Porta_Saida= 2
+                    Timestamp = 182249128
+                    padding   = 0
+###[ IntFilho ]### 
+                       ID_Switch = 50493411
+                       Porta_Entrada= 0
+                       Porta_Saida= 0
+                       Timestamp = 4680844966
+                       padding   = 175505408
+###[ IntFilho ]### 
+                          ID_Switch = 1056823327
+                          Porta_Entrada= 20
+                          Porta_Saida= 0
+                          Timestamp = 8831123850244
+                          padding   = 128
+###[ IntFilho ]### 
+                             ID_Switch = 2
+                             Porta_Entrada= 0
+                             Porta_Saida= 0
+                             Timestamp = 17247043584
+                             padding   = 45561794
+###[ IntFilho ]### 
+                                ID_Switch = 3221225472
+                                Porta_Entrada= 0
+                                Porta_Saida= 0
+                                Timestamp = 34393423872
+                                padding   = 45516260
+###[ IntFilho ]### 
+                                   ID_Switch = 1073741824
+                                   Porta_Entrada= 6
+                                   Porta_Saida= 9
+                                   Timestamp = 3470333575169
+                                   padding   = 96469349
+###[ IntFilho ]### 
+                                      ID_Switch = 1131151360
+                                      Porta_Entrada= 125
+                                      Porta_Saida= 500
+                                      Timestamp = 138229898544132
+                                      padding   = 167772674
+###[ IntFilho ]### 
+                                         ID_Switch = 128
+                                         Porta_Entrada= 0
+                                         Porta_Saida= 0
+                                         Timestamp = 34359738376
+                                         padding   = 16793600
+###[ IntFilho ]### 
+                                            ID_Switch = 45515577
+                                            Porta_Entrada= 0
+                                            Porta_Saida= 0
+                                            Timestamp = 4
+                                            padding   = 8421376
+###[ IntFilho ]### 
+                                               ID_Switch = 45560199
+                                               Porta_Entrada= 128
+                                               Porta_Saida= 0
+                                               Timestamp = 201854940
+                                               padding   = 0
+###[ IntFilho ]### 
+                                                  ID_Switch = 1170211105
+                                                  Porta_Entrada= 276
+                                                  Porta_Saida= 464
+                                                  Timestamp = 4227293860
+                                                  padding   = 167772674
+###[ IntFilho ]### 
+                                                     ID_Switch = 167772417
+                                                     Porta_Entrada= 0
+                                                     Porta_Saida= 0
+                                                     Timestamp = 2199023255560
+                                                     padding   = 1
+###[ IntFilho ]### 
+                                                        ID_Switch = 16793600
+                                                        Porta_Entrada= 5
+                                                        Porta_Saida= 220
+                                                        Timestamp = 214722594996224
+                                                        padding   = 2
+###[ IntFilho ]### 
+                                                           ID_Switch = 8421376
+                                                           Porta_Entrada= 5
+                                                           Porta_Saida= 218
+                                                           Timestamp = 3315714752512
+                                                           padding   = 50481147
+###[ IntFilho ]### 
+                                                              ID_Switch = 0
+                                                              Porta_Entrada= 139
+                                                              Porta_Saida= 256
+                                                              Timestamp = 3801275170816
+                                                              padding   = 1056776184
+###[ IntFilho ]### 
+                                                                 ID_Switch = 167772417
+                                                                 Porta_Entrada= 20
+                                                                 Porta_Saida= 0
+                                                                 Timestamp = 8830452761088
+                                                                 padding   = 2
+###[ IntFilho ]### 
+                                                                    ID_Switch = 2
+                                                                    Porta_Entrada= 2
+                                                                    Porta_Saida= 1
+                                                                    Timestamp = 182058717
+                                                                    padding   = 0
+###[ IntFilho ]### 
+                                                                       ID_Switch = 1
+                                                                       Porta_Entrada= 1
+                                                                       Porta_Saida= 2
+                                                                       Timestamp = 182237024
+                                                                       padding   = 0
+###[ IntFilho ]### 
+                                                                          ID_Switch = 50482208
+                                                                          Porta_Entrada= 0
+                                                                          Porta_Saida= 0
+                                                                          Timestamp = 4680843878
+                                                                          padding   = 175046656
+###[ IntFilho ]### 
+                                                                             ID_Switch = 1056823606
+                                                                             Porta_Entrada= 20
+                                                                             Porta_Saida= 0
+                                                                             Timestamp = 8831123850244
+                                                                             padding   = 128
+###[ IntFilho ]### 
+                                                                                ID_Switch = 2
+                                                                                Porta_Entrada= 0
+                                                                                Porta_Saida= 0
+                                                                                Timestamp = 17247043584
+                                                                                padding   = 45559035
+###[ IntFilho ]### 
+                                                                                   ID_Switch = 2147483648
+                                                                                   Porta_Entrada= 0
+                                                                                   Porta_Saida= 0
+                                                                                   Timestamp = 34393423872
+                                                                                   padding   = 45513838
+###[ IntFilho ]### 
+                                                                                      ID_Switch = 3221225472
+                                                                                      Porta_Entrada= 6
+                                                                                      Porta_Saida= 11
+                                                                                      Timestamp = 187123135152129
+                                                                                      padding   = 83886165
+###[ IntFilho ]### 
+                                                                                         ID_Switch = 65536
+                                                                                         Porta_Entrada= 125
+                                                                                         Porta_Saida= 501
+                                                                                         Timestamp = 161233743381508
+                                                                                         padding   = 167772674
+###[ IntFilho ]### 
+                                                                                            ID_Switch = 128
+                                                                                            Porta_Entrada= 0
+                                                                                            Porta_Saida= 0
+                                                                                            Timestamp = 34359738376
+                                                                                            padding   = 16793600
+###[ IntFilho ]### 
+                                                                                               ID_Switch = 45513429
+                                                                                               Porta_Entrada= 128
+                                                                                               Porta_Saida= 0
+                                                                                               Timestamp = 4
+                                                                                               padding   = 8421376
+###[ IntFilho ]### 
+                                                                                                  ID_Switch = 45557578
+                                                                                                  Porta_Entrada= 256
+                                                                                                  Porta_Saida= 0
+                                                                                                  Timestamp = 16245330760
+                                                                                                  padding   = 0
+###[ IntFilho ]### 
+                                                                                                     ID_Switch = 0
+                                                                                                     Porta_Entrada= 160
+                                                                                                     Porta_Saida= 8
+                                                                                                     Timestamp = 140741658279937
+                                                                                                     padding   = 677735532
+###[ Raw ]### 
+                                                                                                        load      = 'o'
+
+
+========================================
+ PACOTE COM TELEMETRIA (INT) RECEBIDO!
+========================================
+###[ Ethernet ]### 
+  dst       = 08:00:00:00:02:22
+  src       = 08:00:00:00:02:00
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0xc0
+     len       = 616
+     id        = 17269
+     flags     = 
+     frag      = 0
+     ttl       = 62
+     proto     = 253
+     chksum    = 0x1e62
+     src       = 10.0.1.1
+     dst       = 10.0.2.2
+     \options   \
+###[ IntPai ]### 
+        Tamanho_Filho= 128
+        Quantidade_Filhos= 2
+###[ IntFilho ]### 
+           ID_Switch = 2
+           Porta_Entrada= 2
+           Porta_Saida= 1
+           Timestamp = 182082208
+           padding   = 0
+###[ IntFilho ]### 
+              ID_Switch = 1
+              Porta_Entrada= 1
+              Porta_Saida= 2
+              Timestamp = 182260896
+              padding   = 0
+###[ IntFilho ]### 
+                 ID_Switch = 50515954
+                 Porta_Entrada= 0
+                 Porta_Saida= 0
+                 Timestamp = 4680845510
+                 padding   = 175636480
+###[ IntFilho ]### 
+                    ID_Switch = 1056823189
+                    Porta_Entrada= 20
+                    Porta_Saida= 0
+                    Timestamp = 8831123850244
+                    padding   = 128
+###[ IntFilho ]### 
+                       ID_Switch = 2
+                       Porta_Entrada= 0
+                       Porta_Saida= 0
+                       Timestamp = 17247043584
+                       padding   = 45564853
+###[ IntFilho ]### 
+                          ID_Switch = 3221225472
+                          Porta_Entrada= 0
+                          Porta_Saida= 0
+                          Timestamp = 34393423872
+                          padding   = 45519833
+###[ IntFilho ]### 
+                             ID_Switch = 3221225472
+                             Porta_Entrada= 6
+                             Porta_Saida= 10
+                             Timestamp = 181608397144065
+                             padding   = 96469485
+###[ IntFilho ]### 
+                                ID_Switch = 1131216896
+                                Porta_Entrada= 125
+                                Porta_Saida= 500
+                                Timestamp = 135876256465924
+                                padding   = 167772674
+###[ IntFilho ]### 
+                                   ID_Switch = 128
+                                   Porta_Entrada= 0
+                                   Porta_Saida= 0
+                                   Timestamp = 34359738376
+                                   padding   = 16793600
+###[ IntFilho ]### 
+                                      ID_Switch = 45519508
+                                      Porta_Entrada= 384
+                                      Porta_Saida= 0
+                                      Timestamp = 4
+                                      padding   = 8421376
+###[ IntFilho ]### 
+                                         ID_Switch = 45562282
+                                         Porta_Entrada= 0
+                                         Porta_Saida= 0
+                                         Timestamp = 201973644
+                                         padding   = 0
+###[ IntFilho ]### 
+                                            ID_Switch = 1170211241
+                                            Porta_Entrada= 276
+                                            Porta_Saida= 472
+                                            Timestamp = 4227293308
+                                            padding   = 167772674
+###[ IntFilho ]### 
+                                               ID_Switch = 167772417
+                                               Porta_Entrada= 0
+                                               Porta_Saida= 0
+                                               Timestamp = 2199023255560
+                                               padding   = 1
+###[ IntFilho ]### 
+                                                  ID_Switch = 16793600
+                                                  Porta_Entrada= 5
+                                                  Porta_Saida= 220
+                                                  Timestamp = 245238337634304
+                                                  padding   = 2
+###[ IntFilho ]### 
+                                                     ID_Switch = 8421376
+                                                     Porta_Entrada= 5
+                                                     Porta_Saida= 218
+                                                     Timestamp = 25911537696768
+                                                     padding   = 50479306
+###[ IntFilho ]### 
+                                                        ID_Switch = 0
+                                                        Porta_Entrada= 139
+                                                        Porta_Saida= 256
+                                                        Timestamp = 6137737904128
+                                                        padding   = 1056776046
+###[ IntFilho ]### 
+                                                           ID_Switch = 167772417
+                                                           Porta_Entrada= 20
+                                                           Porta_Saida= 0
+                                                           Timestamp = 8830452761088
+                                                           padding   = 2
+###[ IntFilho ]### 
+                                                              ID_Switch = 2
+                                                              Porta_Entrada= 2
+                                                              Porta_Saida= 1
+                                                              Timestamp = 182062308
+                                                              padding   = 0
+###[ IntFilho ]### 
+                                                                 ID_Switch = 1
+                                                                 Porta_Entrada= 1
+                                                                 Porta_Saida= 2
+                                                                 Timestamp = 182240797
+                                                                 padding   = 0
+###[ IntFilho ]### 
+                                                                    ID_Switch = 50463735
+                                                                    Porta_Entrada= 0
+                                                                    Porta_Saida= 0
+                                                                    Timestamp = 4680844422
+                                                                    padding   = 175374336
+###[ IntFilho ]### 
+                                                                       ID_Switch = 1056823465
+                                                                       Porta_Entrada= 20
+                                                                       Porta_Saida= 0
+                                                                       Timestamp = 8831123850244
+                                                                       padding   = 128
+###[ IntFilho ]### 
+                                                                          ID_Switch = 2
+                                                                          Porta_Entrada= 0
+                                                                          Porta_Saida= 0
+                                                                          Timestamp = 17247043584
+                                                                          padding   = 45560018
+###[ IntFilho ]### 
+                                                                             ID_Switch = 2147483648
+                                                                             Porta_Entrada= 0
+                                                                             Porta_Saida= 0
+                                                                             Timestamp = 34393423872
+                                                                             padding   = 45514945
+###[ IntFilho ]### 
+                                                                                ID_Switch = 0
+                                                                                Porta_Entrada= 6
+                                                                                Porta_Saida= 9
+                                                                                Timestamp = 35098472742913
+                                                                                padding   = 96469213
+###[ IntFilho ]### 
+                                                                                   ID_Switch = 1131020288
+                                                                                   Porta_Entrada= 125
+                                                                                   Porta_Saida= 500
+                                                                                   Timestamp = 140600720491524
+                                                                                   padding   = 167772674
+###[ IntFilho ]### 
+                                                                                      ID_Switch = 128
+                                                                                      Porta_Entrada= 0
+                                                                                      Porta_Saida= 0
+                                                                                      Timestamp = 34359738376
+                                                                                      padding   = 16793600
+###[ IntFilho ]### 
+                                                                                         ID_Switch = 45514679
+                                                                                         Porta_Entrada= 128
+                                                                                         Porta_Saida= 0
+                                                                                         Timestamp = 4
+                                                                                         padding   = 8421376
+###[ IntFilho ]### 
+                                                                                            ID_Switch = 45559256
+                                                                                            Porta_Entrada= 0
+                                                                                            Porta_Saida= 0
+                                                                                            Timestamp = 201928832
+                                                                                            padding   = 0
+###[ IntFilho ]### 
+                                                                                               ID_Switch = 1170210969
+                                                                                               Porta_Entrada= 276
+                                                                                               Porta_Saida= 444
+                                                                                               Timestamp = 4227294424
+                                                                                               padding   = 167772674
+###[ IntFilho ]### 
+                                                                                                  ID_Switch = 167772417
+                                                                                                  Porta_Entrada= 0
+                                                                                                  Porta_Saida= 0
+                                                                                                  Timestamp = 2199023255560
+                                                                                                  padding   = 1
+###[ IntFilho ]### 
+                                                                                                     ID_Switch = 16793600
+                                                                                                     Porta_Entrada= 5
+                                                                                                     Porta_Saida= 220
+                                                                                                     Timestamp = 197834783588352
+                                                                                                     padding   = 2
+###[ IntFilho ]### 
+                                                                                                        ID_Switch = 8421376
+                                                                                                        Porta_Entrada= 5
+                                                                                                        Porta_Saida= 217
+                                                                                                        Timestamp = 265785461178368
+                                                                                                        padding   = 50522764
+###[ IntFilho ]### 
+                                                                                                           ID_Switch = 0
+                                                                                                           Porta_Entrada= 138
+                                                                                                           Porta_Saida= 0
+                                                                                                           Timestamp = 1460289142784
+                                                                                                           padding   = 1056793769
+###[ IntFilho ]### 
+                                                                                                              ID_Switch = 167772417
+                                                                                                              Porta_Entrada= 20
+                                                                                                              Porta_Saida= 0
+                                                                                                              Timestamp = 8830452761088
+                                                                                                              padding   = 2
+###[ IntFilho ]### 
+                                                                                                                 ID_Switch = 2
+                                                                                                                 Porta_Entrada= 2
+                                                                                                                 Porta_Saida= 1
+                                                                                                                 Timestamp = 182053717
+                                                                                                                 padding   = 0
+###[ IntFilho ]### 
+                                                                                                                    ID_Switch = 1
+                                                                                                                    Porta_Entrada= 1
+                                                                                                                    Porta_Saida= 2
+                                                                                                                    Timestamp = 182230314
+                                                                                                                    padding   = 0
+###[ Raw ]### 
+                                                                                                                       load      = '\\xf2\x13\x04\\xd2\x00\x00\x00\x00\x00\x00\x00\x00'
+
+
+========================================
+ PACOTE COM TELEMETRIA (INT) RECEBIDO!
+========================================
+###[ Ethernet ]### 
+  dst       = 08:00:00:00:02:00
+  src       = 08:00:00:00:02:22
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0xc0
+     len       = 576
+     id        = 35449
+     flags     = 
+     frag      = 0
+     ttl       = 64
+     proto     = icmp
+     chksum    = 0xd681
+     src       = 10.0.2.2
+     dst       = 10.0.1.1
+     \options   \
+###[ ICMP ]### 
+        type      = dest-unreach
+        code      = protocol-unreachable
+        chksum    = 0x34de
+        reserved  = 0
+        length    = 0
+        nexthopmtu= 0
+        unused    = ''
+###[ IP in ICMP ]### 
+           version   = 4
+           ihl       = 5
+           tos       = 0xc0
+           len       = 616
+           id        = 17269
+           flags     = 
+           frag      = 0
+           ttl       = 62
+           proto     = 253
+           chksum    = 0x1e62
+           src       = 10.0.1.1
+           dst       = 10.0.2.2
+           \options   \
+###[ IntPai ]### 
+              Tamanho_Filho= 128
+              Quantidade_Filhos= 2
+###[ IntFilho ]### 
+                 ID_Switch = 2
+                 Porta_Entrada= 2
+                 Porta_Saida= 1
+                 Timestamp = 182082208
+                 padding   = 0
+###[ IntFilho ]### 
+                    ID_Switch = 1
+                    Porta_Entrada= 1
+                    Porta_Saida= 2
+                    Timestamp = 182260896
+                    padding   = 0
+###[ IntFilho ]### 
+                       ID_Switch = 50515954
+                       Porta_Entrada= 0
+                       Porta_Saida= 0
+                       Timestamp = 4680845510
+                       padding   = 175636480
+###[ IntFilho ]### 
+                          ID_Switch = 1056823189
+                          Porta_Entrada= 20
+                          Porta_Saida= 0
+                          Timestamp = 8831123850244
+                          padding   = 128
+###[ IntFilho ]### 
+                             ID_Switch = 2
+                             Porta_Entrada= 0
+                             Porta_Saida= 0
+                             Timestamp = 17247043584
+                             padding   = 45564853
+###[ IntFilho ]### 
+                                ID_Switch = 3221225472
+                                Porta_Entrada= 0
+                                Porta_Saida= 0
+                                Timestamp = 34393423872
+                                padding   = 45519833
+###[ IntFilho ]### 
+                                   ID_Switch = 3221225472
+                                   Porta_Entrada= 6
+                                   Porta_Saida= 10
+                                   Timestamp = 181608397144065
+                                   padding   = 96469485
+###[ IntFilho ]### 
+                                      ID_Switch = 1131216896
+                                      Porta_Entrada= 125
+                                      Porta_Saida= 500
+                                      Timestamp = 135876256465924
+                                      padding   = 167772674
+###[ IntFilho ]### 
+                                         ID_Switch = 128
+                                         Porta_Entrada= 0
+                                         Porta_Saida= 0
+                                         Timestamp = 34359738376
+                                         padding   = 16793600
+###[ IntFilho ]### 
+                                            ID_Switch = 45519508
+                                            Porta_Entrada= 384
+                                            Porta_Saida= 0
+                                            Timestamp = 4
+                                            padding   = 8421376
+###[ IntFilho ]### 
+                                               ID_Switch = 45562282
+                                               Porta_Entrada= 0
+                                               Porta_Saida= 0
+                                               Timestamp = 201973644
+                                               padding   = 0
+###[ IntFilho ]### 
+                                                  ID_Switch = 1170211241
+                                                  Porta_Entrada= 276
+                                                  Porta_Saida= 472
+                                                  Timestamp = 4227293308
+                                                  padding   = 167772674
+###[ IntFilho ]### 
+                                                     ID_Switch = 167772417
+                                                     Porta_Entrada= 0
+                                                     Porta_Saida= 0
+                                                     Timestamp = 2199023255560
+                                                     padding   = 1
+###[ IntFilho ]### 
+                                                        ID_Switch = 16793600
+                                                        Porta_Entrada= 5
+                                                        Porta_Saida= 220
+                                                        Timestamp = 245238337634304
+                                                        padding   = 2
+###[ IntFilho ]### 
+                                                           ID_Switch = 8421376
+                                                           Porta_Entrada= 5
+                                                           Porta_Saida= 218
+                                                           Timestamp = 25911537696768
+                                                           padding   = 50479306
+###[ IntFilho ]### 
+                                                              ID_Switch = 0
+                                                              Porta_Entrada= 139
+                                                              Porta_Saida= 256
+                                                              Timestamp = 6137737904128
+                                                              padding   = 1056776046
+###[ IntFilho ]### 
+                                                                 ID_Switch = 167772417
+                                                                 Porta_Entrada= 20
+                                                                 Porta_Saida= 0
+                                                                 Timestamp = 8830452761088
+                                                                 padding   = 2
+###[ IntFilho ]### 
+                                                                    ID_Switch = 2
+                                                                    Porta_Entrada= 2
+                                                                    Porta_Saida= 1
+                                                                    Timestamp = 182062308
+                                                                    padding   = 0
+###[ IntFilho ]### 
+                                                                       ID_Switch = 1
+                                                                       Porta_Entrada= 1
+                                                                       Porta_Saida= 2
+                                                                       Timestamp = 182240797
+                                                                       padding   = 0
+###[ IntFilho ]### 
+                                                                          ID_Switch = 50463735
+                                                                          Porta_Entrada= 0
+                                                                          Porta_Saida= 0
+                                                                          Timestamp = 4680844422
+                                                                          padding   = 175374336
+###[ IntFilho ]### 
+                                                                             ID_Switch = 1056823465
+                                                                             Porta_Entrada= 20
+                                                                             Porta_Saida= 0
+                                                                             Timestamp = 8831123850244
+                                                                             padding   = 128
+###[ IntFilho ]### 
+                                                                                ID_Switch = 2
+                                                                                Porta_Entrada= 0
+                                                                                Porta_Saida= 0
+                                                                                Timestamp = 17247043584
+                                                                                padding   = 45560018
+###[ IntFilho ]### 
+                                                                                   ID_Switch = 2147483648
+                                                                                   Porta_Entrada= 0
+                                                                                   Porta_Saida= 0
+                                                                                   Timestamp = 34393423872
+                                                                                   padding   = 45514945
+###[ IntFilho ]### 
+                                                                                      ID_Switch = 0
+                                                                                      Porta_Entrada= 6
+                                                                                      Porta_Saida= 9
+                                                                                      Timestamp = 35098472742913
+                                                                                      padding   = 96469213
+###[ IntFilho ]### 
+                                                                                         ID_Switch = 1131020288
+                                                                                         Porta_Entrada= 125
+                                                                                         Porta_Saida= 500
+                                                                                         Timestamp = 140600720491524
+                                                                                         padding   = 167772674
+###[ IntFilho ]### 
+                                                                                            ID_Switch = 128
+                                                                                            Porta_Entrada= 0
+                                                                                            Porta_Saida= 0
+                                                                                            Timestamp = 34359738376
+                                                                                            padding   = 16793600
+###[ IntFilho ]### 
+                                                                                               ID_Switch = 45514679
+                                                                                               Porta_Entrada= 128
+                                                                                               Porta_Saida= 0
+                                                                                               Timestamp = 4
+                                                                                               padding   = 8421376
+###[ IntFilho ]### 
+                                                                                                  ID_Switch = 45559256
+                                                                                                  Porta_Entrada= 0
+                                                                                                  Porta_Saida= 0
+                                                                                                  Timestamp = 201928832
+                                                                                                  padding   = 0
+###[ IntFilho ]### 
+                                                                                                     ID_Switch = 1170210969
+                                                                                                     Porta_Entrada= 276
+                                                                                                     Porta_Saida= 444
+                                                                                                     Timestamp = 4227294424
+                                                                                                     padding   = 167772674
+###[ IntFilho ]### 
+                                                                                                        ID_Switch = 167772417
+                                                                                                        Porta_Entrada= 0
+                                                                                                        Porta_Saida= 0
+                                                                                                        Timestamp = 2199023255560
+                                                                                                        padding   = 1
+###[ IntFilho ]### 
+                                                                                                           ID_Switch = 16793600
+                                                                                                           Porta_Entrada= 5
+                                                                                                           Porta_Saida= 220
+                                                                                                           Timestamp = 197834783588352
+                                                                                                           padding   = 2
+###[ IntFilho ]### 
+                                                                                                              ID_Switch = 8421376
+                                                                                                              Porta_Entrada= 5
+                                                                                                              Porta_Saida= 217
+                                                                                                              Timestamp = 265785461178368
+                                                                                                              padding   = 50522764
+###[ Raw ]### 
+                                                                                                                 load      = '\x00\x00\x00\x00E\x00\x00U'
+
+
+========================================
+ PACOTE COM TELEMETRIA (INT) RECEBIDO!
+========================================
+###[ Ethernet ]### 
+  dst       = 08:00:00:00:02:22
+  src       = 08:00:00:00:02:00
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0xc0
+     len       = 616
+     id        = 17273
+     flags     = 
+     frag      = 0
+     ttl       = 62
+     proto     = 253
+     chksum    = 0x1e5e
+     src       = 10.0.1.1
+     dst       = 10.0.2.2
+     \options   \
+###[ IntPai ]### 
+        Tamanho_Filho= 128
+        Quantidade_Filhos= 2
+###[ IntFilho ]### 
+           ID_Switch = 2
+           Porta_Entrada= 2
+           Porta_Saida= 1
+           Timestamp = 182086659
+           padding   = 0
+###[ IntFilho ]### 
+              ID_Switch = 1
+              Porta_Entrada= 1
+              Porta_Saida= 2
+              Timestamp = 182265227
+              padding   = 0
+###[ IntFilho ]### 
+                 ID_Switch = 50492397
+                 Porta_Entrada= 0
+                 Porta_Saida= 0
+                 Timestamp = 4680845730
+                 padding   = 175702016
+###[ IntFilho ]### 
+                    ID_Switch = 1056823133
+                    Porta_Entrada= 20
+                    Porta_Saida= 0
+                    Timestamp = 8831123850244
+                    padding   = 128
+###[ IntFilho ]### 
+                       ID_Switch = 2
+                       Porta_Entrada= 0
+                       Porta_Saida= 0
+                       Timestamp = 17247043584
+                       padding   = 45565811
+###[ IntFilho ]### 
+                          ID_Switch = 0
+                          Porta_Entrada= 0
+                          Porta_Saida= 0
+                          Timestamp = 34393423872
+                          padding   = 45520786
+###[ IntFilho ]### 
+                             ID_Switch = 2147483648
+                             Porta_Entrada= 6
+                             Porta_Saida= 8
+                             Timestamp = 232512349536257
+                             padding   = 96469608
+###[ IntFilho ]### 
+                                ID_Switch = 1131741184
+                                Porta_Entrada= 125
+                                Porta_Saida= 500
+                                Timestamp = 133625693602820
+                                padding   = 167772674
+###[ IntFilho ]### 
+                                   ID_Switch = 128
+                                   Porta_Entrada= 0
+                                   Porta_Saida= 0
+                                   Timestamp = 34359738376
+                                   padding   = 16793600
+###[ IntFilho ]### 
+                                      ID_Switch = 45520552
+                                      Porta_Entrada= 0
+                                      Porta_Saida= 0
+                                      Timestamp = 4
+                                      padding   = 8421376
+###[ IntFilho ]### 
+                                         ID_Switch = 45565224
+                                         Porta_Entrada= 0
+                                         Porta_Saida= 0
+                                         Timestamp = 202063816
+                                         padding   = 0
+###[ IntFilho ]### 
+                                            ID_Switch = 1170211377
+                                            Porta_Entrada= 276
+                                            Porta_Saida= 480
+                                            Timestamp = 4227292756
+                                            padding   = 167772674
+###[ IntFilho ]### 
+                                               ID_Switch = 167772417
+                                               Porta_Entrada= 0
+                                               Porta_Saida= 0
+                                               Timestamp = 2199023255560
+                                               padding   = 1
+###[ IntFilho ]### 
+                                                  ID_Switch = 16793600
+                                                  Porta_Entrada= 5
+                                                  Porta_Saida= 221
+                                                  Timestamp = 16316580757504
+                                                  padding   = 2
+###[ IntFilho ]### 
+                                                     ID_Switch = 8421376
+                                                     Porta_Entrada= 5
+                                                     Porta_Saida= 218
+                                                     Timestamp = 87303800225792
+                                                     padding   = 50506059
+###[ IntFilho ]### 
+                                                        ID_Switch = 0
+                                                        Porta_Entrada= 139
+                                                        Porta_Saida= 256
+                                                        Timestamp = 8474200375296
+                                                        padding   = 1056775909
+###[ IntFilho ]### 
+                                                           ID_Switch = 167772417
+                                                           Porta_Entrada= 20
+                                                           Porta_Saida= 0
+                                                           Timestamp = 8830452761088
+                                                           padding   = 2
+###[ IntFilho ]### 
+                                                              ID_Switch = 2
+                                                              Porta_Entrada= 2
+                                                              Porta_Saida= 1
+                                                              Timestamp = 182078035
+                                                              padding   = 0
+###[ IntFilho ]### 
+                                                                 ID_Switch = 1
+                                                                 Porta_Entrada= 1
+                                                                 Porta_Saida= 2
+                                                                 Timestamp = 182249128
+                                                                 padding   = 0
+###[ IntFilho ]### 
+                                                                    ID_Switch = 50493411
+                                                                    Porta_Entrada= 0
+                                                                    Porta_Saida= 0
+                                                                    Timestamp = 4680844966
+                                                                    padding   = 175505408
+###[ IntFilho ]### 
+                                                                       ID_Switch = 1056823327
+                                                                       Porta_Entrada= 20
+                                                                       Porta_Saida= 0
+                                                                       Timestamp = 8831123850244
+                                                                       padding   = 128
+###[ IntFilho ]### 
+                                                                          ID_Switch = 2
+                                                                          Porta_Entrada= 0
+                                                                          Porta_Saida= 0
+                                                                          Timestamp = 17247043584
+                                                                          padding   = 45561794
+###[ IntFilho ]### 
+                                                                             ID_Switch = 3221225472
+                                                                             Porta_Entrada= 0
+                                                                             Porta_Saida= 0
+                                                                             Timestamp = 34393423872
+                                                                             padding   = 45516260
+###[ IntFilho ]### 
+                                                                                ID_Switch = 1073741824
+                                                                                Porta_Entrada= 6
+                                                                                Porta_Saida= 9
+                                                                                Timestamp = 3470333575169
+                                                                                padding   = 96469349
+###[ IntFilho ]### 
+                                                                                   ID_Switch = 1131151360
+                                                                                   Porta_Entrada= 125
+                                                                                   Porta_Saida= 500
+                                                                                   Timestamp = 138229898544132
+                                                                                   padding   = 167772674
+###[ IntFilho ]### 
+                                                                                      ID_Switch = 128
+                                                                                      Porta_Entrada= 0
+                                                                                      Porta_Saida= 0
+                                                                                      Timestamp = 34359738376
+                                                                                      padding   = 16793600
+###[ IntFilho ]### 
+                                                                                         ID_Switch = 45515577
+                                                                                         Porta_Entrada= 0
+                                                                                         Porta_Saida= 0
+                                                                                         Timestamp = 4
+                                                                                         padding   = 8421376
+###[ IntFilho ]### 
+                                                                                            ID_Switch = 45560199
+                                                                                            Porta_Entrada= 128
+                                                                                            Porta_Saida= 0
+                                                                                            Timestamp = 201854940
+                                                                                            padding   = 0
+###[ IntFilho ]### 
+                                                                                               ID_Switch = 1170211105
+                                                                                               Porta_Entrada= 276
+                                                                                               Porta_Saida= 464
+                                                                                               Timestamp = 4227293860
+                                                                                               padding   = 167772674
+###[ IntFilho ]### 
+                                                                                                  ID_Switch = 167772417
+                                                                                                  Porta_Entrada= 0
+                                                                                                  Porta_Saida= 0
+                                                                                                  Timestamp = 2199023255560
+                                                                                                  padding   = 1
+###[ IntFilho ]### 
+                                                                                                     ID_Switch = 16793600
+                                                                                                     Porta_Entrada= 5
+                                                                                                     Porta_Saida= 220
+                                                                                                     Timestamp = 214722594996224
+                                                                                                     padding   = 2
+###[ IntFilho ]### 
+                                                                                                        ID_Switch = 8421376
+                                                                                                        Porta_Entrada= 5
+                                                                                                        Porta_Saida= 218
+                                                                                                        Timestamp = 3315714752512
+                                                                                                        padding   = 50481147
+###[ IntFilho ]### 
+                                                                                                           ID_Switch = 0
+                                                                                                           Porta_Entrada= 139
+                                                                                                           Porta_Saida= 256
+                                                                                                           Timestamp = 3801275170816
+                                                                                                           padding   = 1056776184
+###[ IntFilho ]### 
+                                                                                                              ID_Switch = 167772417
+                                                                                                              Porta_Entrada= 20
+                                                                                                              Porta_Saida= 0
+                                                                                                              Timestamp = 8830452761088
+                                                                                                              padding   = 2
+###[ IntFilho ]### 
+                                                                                                                 ID_Switch = 2
+                                                                                                                 Porta_Entrada= 2
+                                                                                                                 Porta_Saida= 1
+                                                                                                                 Timestamp = 182058717
+                                                                                                                 padding   = 0
+###[ IntFilho ]### 
+                                                                                                                    ID_Switch = 1
+                                                                                                                    Porta_Entrada= 1
+                                                                                                                    Porta_Saida= 2
+                                                                                                                    Timestamp = 182237024
+                                                                                                                    padding   = 0
+###[ Raw ]### 
+                                                                                                                       load      = '\x03\x02L \x00\x00\x00\x00E\\xc0\x00\\x99'
+
+
+========================================
+ PACOTE COM TELEMETRIA (INT) RECEBIDO!
+========================================
+###[ Ethernet ]### 
+  dst       = 08:00:00:00:02:00
+  src       = 08:00:00:00:02:22
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0xc0
+     len       = 576
+     id        = 35457
+     flags     = 
+     frag      = 0
+     ttl       = 64
+     proto     = icmp
+     chksum    = 0xd679
+     src       = 10.0.2.2
+     dst       = 10.0.1.1
+     \options   \
+###[ ICMP ]### 
+        type      = dest-unreach
+        code      = protocol-unreachable
+        chksum    = 0xd507
+        reserved  = 0
+        length    = 0
+        nexthopmtu= 0
+        unused    = ''
+###[ IP in ICMP ]### 
+           version   = 4
+           ihl       = 5
+           tos       = 0xc0
+           len       = 616
+           id        = 17273
+           flags     = 
+           frag      = 0
+           ttl       = 62
+           proto     = 253
+           chksum    = 0x1e5e
+           src       = 10.0.1.1
+           dst       = 10.0.2.2
+           \options   \
+###[ IntPai ]### 
+              Tamanho_Filho= 128
+              Quantidade_Filhos= 2
+###[ IntFilho ]### 
+                 ID_Switch = 2
+                 Porta_Entrada= 2
+                 Porta_Saida= 1
+                 Timestamp = 182086659
+                 padding   = 0
+###[ IntFilho ]### 
+                    ID_Switch = 1
+                    Porta_Entrada= 1
+                    Porta_Saida= 2
+                    Timestamp = 182265227
+                    padding   = 0
+###[ IntFilho ]### 
+                       ID_Switch = 50492397
+                       Porta_Entrada= 0
+                       Porta_Saida= 0
+                       Timestamp = 4680845730
+                       padding   = 175702016
+###[ IntFilho ]### 
+                          ID_Switch = 1056823133
+                          Porta_Entrada= 20
+                          Porta_Saida= 0
+                          Timestamp = 8831123850244
+                          padding   = 128
+###[ IntFilho ]### 
+                             ID_Switch = 2
+                             Porta_Entrada= 0
+                             Porta_Saida= 0
+                             Timestamp = 17247043584
+                             padding   = 45565811
+###[ IntFilho ]### 
+                                ID_Switch = 0
+                                Porta_Entrada= 0
+                                Porta_Saida= 0
+                                Timestamp = 34393423872
+                                padding   = 45520786
+###[ IntFilho ]### 
+                                   ID_Switch = 2147483648
+                                   Porta_Entrada= 6
+                                   Porta_Saida= 8
+                                   Timestamp = 232512349536257
+                                   padding   = 96469608
+###[ IntFilho ]### 
+                                      ID_Switch = 1131741184
+                                      Porta_Entrada= 125
+                                      Porta_Saida= 500
+                                      Timestamp = 133625693602820
+                                      padding   = 167772674
+###[ IntFilho ]### 
+                                         ID_Switch = 128
+                                         Porta_Entrada= 0
+                                         Porta_Saida= 0
+                                         Timestamp = 34359738376
+                                         padding   = 16793600
+###[ IntFilho ]### 
+                                            ID_Switch = 45520552
+                                            Porta_Entrada= 0
+                                            Porta_Saida= 0
+                                            Timestamp = 4
+                                            padding   = 8421376
+###[ IntFilho ]### 
+                                               ID_Switch = 45565224
+                                               Porta_Entrada= 0
+                                               Porta_Saida= 0
+                                               Timestamp = 202063816
+                                               padding   = 0
+###[ IntFilho ]### 
+                                                  ID_Switch = 1170211377
+                                                  Porta_Entrada= 276
+                                                  Porta_Saida= 480
+                                                  Timestamp = 4227292756
+                                                  padding   = 167772674
+###[ IntFilho ]### 
+                                                     ID_Switch = 167772417
+                                                     Porta_Entrada= 0
+                                                     Porta_Saida= 0
+                                                     Timestamp = 2199023255560
+                                                     padding   = 1
+###[ IntFilho ]### 
+                                                        ID_Switch = 16793600
+                                                        Porta_Entrada= 5
+                                                        Porta_Saida= 221
+                                                        Timestamp = 16316580757504
+                                                        padding   = 2
+###[ IntFilho ]### 
+                                                           ID_Switch = 8421376
+                                                           Porta_Entrada= 5
+                                                           Porta_Saida= 218
+                                                           Timestamp = 87303800225792
+                                                           padding   = 50506059
+###[ IntFilho ]### 
+                                                              ID_Switch = 0
+                                                              Porta_Entrada= 139
+                                                              Porta_Saida= 256
+                                                              Timestamp = 8474200375296
+                                                              padding   = 1056775909
+###[ IntFilho ]### 
+                                                                 ID_Switch = 167772417
+                                                                 Porta_Entrada= 20
+                                                                 Porta_Saida= 0
+                                                                 Timestamp = 8830452761088
+                                                                 padding   = 2
+###[ IntFilho ]### 
+                                                                    ID_Switch = 2
+                                                                    Porta_Entrada= 2
+                                                                    Porta_Saida= 1
+                                                                    Timestamp = 182078035
+                                                                    padding   = 0
+###[ IntFilho ]### 
+                                                                       ID_Switch = 1
+                                                                       Porta_Entrada= 1
+                                                                       Porta_Saida= 2
+                                                                       Timestamp = 182249128
+                                                                       padding   = 0
+###[ IntFilho ]### 
+                                                                          ID_Switch = 50493411
+                                                                          Porta_Entrada= 0
+                                                                          Porta_Saida= 0
+                                                                          Timestamp = 4680844966
+                                                                          padding   = 175505408
+###[ IntFilho ]### 
+                                                                             ID_Switch = 1056823327
+                                                                             Porta_Entrada= 20
+                                                                             Porta_Saida= 0
+                                                                             Timestamp = 8831123850244
+                                                                             padding   = 128
+###[ IntFilho ]### 
+                                                                                ID_Switch = 2
+                                                                                Porta_Entrada= 0
+                                                                                Porta_Saida= 0
+                                                                                Timestamp = 17247043584
+                                                                                padding   = 45561794
+###[ IntFilho ]### 
+                                                                                   ID_Switch = 3221225472
+                                                                                   Porta_Entrada= 0
+                                                                                   Porta_Saida= 0
+                                                                                   Timestamp = 34393423872
+                                                                                   padding   = 45516260
+###[ IntFilho ]### 
+                                                                                      ID_Switch = 1073741824
+                                                                                      Porta_Entrada= 6
+                                                                                      Porta_Saida= 9
+                                                                                      Timestamp = 3470333575169
+                                                                                      padding   = 96469349
+###[ IntFilho ]### 
+                                                                                         ID_Switch = 1131151360
+                                                                                         Porta_Entrada= 125
+                                                                                         Porta_Saida= 500
+                                                                                         Timestamp = 138229898544132
+                                                                                         padding   = 167772674
+###[ IntFilho ]### 
+                                                                                            ID_Switch = 128
+                                                                                            Porta_Entrada= 0
+                                                                                            Porta_Saida= 0
+                                                                                            Timestamp = 34359738376
+                                                                                            padding   = 16793600
+###[ IntFilho ]### 
+                                                                                               ID_Switch = 45515577
+                                                                                               Porta_Entrada= 0
+                                                                                               Porta_Saida= 0
+                                                                                               Timestamp = 4
+                                                                                               padding   = 8421376
+###[ IntFilho ]### 
+                                                                                                  ID_Switch = 45560199
+                                                                                                  Porta_Entrada= 128
+                                                                                                  Porta_Saida= 0
+                                                                                                  Timestamp = 201854940
+                                                                                                  padding   = 0
+###[ IntFilho ]### 
+                                                                                                     ID_Switch = 1170211105
+                                                                                                     Porta_Entrada= 276
+                                                                                                     Porta_Saida= 464
+                                                                                                     Timestamp = 4227293860
+                                                                                                     padding   = 167772674
+###[ IntFilho ]### 
+                                                                                                        ID_Switch = 167772417
+                                                                                                        Porta_Entrada= 0
+                                                                                                        Porta_Saida= 0
+                                                                                                        Timestamp = 2199023255560
+                                                                                                        padding   = 1
+###[ IntFilho ]### 
+                                                                                                           ID_Switch = 16793600
+                                                                                                           Porta_Entrada= 5
+                                                                                                           Porta_Saida= 220
+                                                                                                           Timestamp = 214722594996224
+                                                                                                           padding   = 2
+###[ IntFilho ]### 
+                                                                                                              ID_Switch = 8421376
+                                                                                                              Porta_Entrada= 5
+                                                                                                              Porta_Saida= 218
+                                                                                                              Timestamp = 3315714752512
+                                                                                                              padding   = 50481147
+###[ Raw ]### 
+                                                                                                                 load      = '\x00\x00\x00\x00E\\xc0\x00\\xdd'
+
+
+========================================
+ PACOTE COM TELEMETRIA (INT) RECEBIDO!
+========================================
+###[ Ethernet ]### 
+  dst       = 08:00:00:00:02:22
+  src       = 08:00:00:00:02:00
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0xc0
+     len       = 616
+     id        = 17278
+     flags     = 
+     frag      = 0
+     ttl       = 62
+     proto     = 253
+     chksum    = 0x1e59
+     src       = 10.0.1.1
+     dst       = 10.0.2.2
+     \options   \
+###[ IntPai ]### 
+        Tamanho_Filho= 128
+        Quantidade_Filhos= 2
+###[ IntFilho ]### 
+           ID_Switch = 2
+           Porta_Entrada= 2
+           Porta_Saida= 1
+           Timestamp = 182094394
+           padding   = 0
+###[ IntFilho ]### 
+              ID_Switch = 1
+              Porta_Entrada= 1
+              Porta_Saida= 2
+              Timestamp = 182272620
+              padding   = 0
+###[ IntFilho ]### 
+                 ID_Switch = 50514422
+                 Porta_Entrada= 0
+                 Porta_Saida= 0
+                 Timestamp = 4680845730
+                 padding   = 176226304
+###[ IntFilho ]### 
+                    ID_Switch = 1056823125
+                    Porta_Entrada= 20
+                    Porta_Saida= 0
+                    Timestamp = 8831123850244
+                    padding   = 128
+###[ IntFilho ]### 
+                       ID_Switch = 2
+                       Porta_Entrada= 0
+                       Porta_Saida= 0
+                       Timestamp = 17247043584
+                       padding   = 45567886
+###[ IntFilho ]### 
+                          ID_Switch = 3221225472
+                          Porta_Entrada= 0
+                          Porta_Saida= 0
+                          Timestamp = 34393423872
+                          padding   = 45522885
+###[ IntFilho ]### 
+                             ID_Switch = 0
+                             Porta_Entrada= 6
+                             Porta_Saida= 11
+                             Timestamp = 92479235817473
+                             padding   = 96469608
+###[ IntFilho ]### 
+                                ID_Switch = 1132003328
+                                Porta_Entrada= 125
+                                Porta_Saida= 500
+                                Timestamp = 133556974126084
+                                padding   = 167772674
+###[ IntFilho ]### 
+                                   ID_Switch = 128
+                                   Porta_Entrada= 0
+                                   Porta_Saida= 0
+                                   Timestamp = 34359738376
+                                   padding   = 16793600
+###[ IntFilho ]### 
+                                      ID_Switch = 45521664
+                                      Porta_Entrada= 384
+                                      Porta_Saida= 0
+                                      Timestamp = 4
+                                      padding   = 8421376
+###[ IntFilho ]### 
+                                         ID_Switch = 45566306
+                                         Porta_Entrada= 384
+                                         Porta_Saida= 0
+                                         Timestamp = 201969588
+                                         padding   = 0
+###[ IntFilho ]### 
+                                            ID_Switch = 1170211432
+                                            Porta_Entrada= 276
+                                            Porta_Saida= 484
+                                            Timestamp = 4227292532
+                                            padding   = 167772674
+###[ IntFilho ]### 
+                                               ID_Switch = 167772417
+                                               Porta_Entrada= 0
+                                               Porta_Saida= 0
+                                               Timestamp = 2199023255560
+                                               padding   = 1
+###[ IntFilho ]### 
+                                                  ID_Switch = 16793600
+                                                  Porta_Entrada= 5
+                                                  Porta_Saida= 221
+                                                  Timestamp = 32762010533888
+                                                  padding   = 2
+###[ IntFilho ]### 
+                                                     ID_Switch = 8421376
+                                                     Porta_Entrada= 5
+                                                     Porta_Saida= 218
+                                                     Timestamp = 103671920590848
+                                                     padding   = 50476254
+###[ IntFilho ]### 
+                                                        ID_Switch = 0
+                                                        Porta_Entrada= 139
+                                                        Porta_Saida= 256
+                                                        Timestamp = 10587326382080
+                                                        padding   = 1056775778
+###[ IntFilho ]### 
+                                                           ID_Switch = 167772417
+                                                           Porta_Entrada= 20
+                                                           Porta_Saida= 0
+                                                           Timestamp = 8830452761088
+                                                           padding   = 2
+###[ IntFilho ]### 
+                                                              ID_Switch = 2
+                                                              Porta_Entrada= 2
+                                                              Porta_Saida= 1
+                                                              Timestamp = 182082208
+                                                              padding   = 0
+###[ IntFilho ]### 
+                                                                 ID_Switch = 1
+                                                                 Porta_Entrada= 1
+                                                                 Porta_Saida= 2
+                                                                 Timestamp = 182260896
+                                                                 padding   = 0
+###[ IntFilho ]### 
+                                                                    ID_Switch = 50515954
+                                                                    Porta_Entrada= 0
+                                                                    Porta_Saida= 0
+                                                                    Timestamp = 4680845510
+                                                                    padding   = 175636480
+###[ IntFilho ]### 
+                                                                       ID_Switch = 1056823189
+                                                                       Porta_Entrada= 20
+                                                                       Porta_Saida= 0
+                                                                       Timestamp = 8831123850244
+                                                                       padding   = 128
+###[ IntFilho ]### 
+                                                                          ID_Switch = 2
+                                                                          Porta_Entrada= 0
+                                                                          Porta_Saida= 0
+                                                                          Timestamp = 17247043584
+                                                                          padding   = 45564853
+###[ IntFilho ]### 
+                                                                             ID_Switch = 3221225472
+                                                                             Porta_Entrada= 0
+                                                                             Porta_Saida= 0
+                                                                             Timestamp = 34393423872
+                                                                             padding   = 45519833
+###[ IntFilho ]### 
+                                                                                ID_Switch = 3221225472
+                                                                                Porta_Entrada= 6
+                                                                                Porta_Saida= 10
+                                                                                Timestamp = 181608397144065
+                                                                                padding   = 96469485
+###[ IntFilho ]### 
+                                                                                   ID_Switch = 1131216896
+                                                                                   Porta_Entrada= 125
+                                                                                   Porta_Saida= 500
+                                                                                   Timestamp = 135876256465924
+                                                                                   padding   = 167772674
+###[ IntFilho ]### 
+                                                                                      ID_Switch = 128
+                                                                                      Porta_Entrada= 0
+                                                                                      Porta_Saida= 0
+                                                                                      Timestamp = 34359738376
+                                                                                      padding   = 16793600
+###[ IntFilho ]### 
+                                                                                         ID_Switch = 45519508
+                                                                                         Porta_Entrada= 384
+                                                                                         Porta_Saida= 0
+                                                                                         Timestamp = 4
+                                                                                         padding   = 8421376
+###[ IntFilho ]### 
+                                                                                            ID_Switch = 45562282
+                                                                                            Porta_Entrada= 0
+                                                                                            Porta_Saida= 0
+                                                                                            Timestamp = 201973644
+                                                                                            padding   = 0
+###[ IntFilho ]### 
+                                                                                               ID_Switch = 1170211241
+                                                                                               Porta_Entrada= 276
+                                                                                               Porta_Saida= 472
+                                                                                               Timestamp = 4227293308
+                                                                                               padding   = 167772674
+###[ IntFilho ]### 
+                                                                                                  ID_Switch = 167772417
+                                                                                                  Porta_Entrada= 0
+                                                                                                  Porta_Saida= 0
+                                                                                                  Timestamp = 2199023255560
+                                                                                                  padding   = 1
+###[ IntFilho ]### 
+                                                                                                     ID_Switch = 16793600
+                                                                                                     Porta_Entrada= 5
+                                                                                                     Porta_Saida= 220
+                                                                                                     Timestamp = 245238337634304
+                                                                                                     padding   = 2
+###[ IntFilho ]### 
+                                                                                                        ID_Switch = 8421376
+                                                                                                        Porta_Entrada= 5
+                                                                                                        Porta_Saida= 218
+                                                                                                        Timestamp = 25911537696768
+                                                                                                        padding   = 50479306
+###[ IntFilho ]### 
+                                                                                                           ID_Switch = 0
+                                                                                                           Porta_Entrada= 139
+                                                                                                           Porta_Saida= 256
+                                                                                                           Timestamp = 6137737904128
+                                                                                                           padding   = 1056776046
+###[ IntFilho ]### 
+                                                                                                              ID_Switch = 167772417
+                                                                                                              Porta_Entrada= 20
+                                                                                                              Porta_Saida= 0
+                                                                                                              Timestamp = 8830452761088
+                                                                                                              padding   = 2
+###[ IntFilho ]### 
+                                                                                                                 ID_Switch = 2
+                                                                                                                 Porta_Entrada= 2
+                                                                                                                 Porta_Saida= 1
+                                                                                                                 Timestamp = 182062308
+                                                                                                                 padding   = 0
+###[ IntFilho ]### 
+                                                                                                                    ID_Switch = 1
+                                                                                                                    Porta_Entrada= 1
+                                                                                                                    Porta_Saida= 2
+                                                                                                                    Timestamp = 182240797
+                                                                                                                    padding   = 0
+###[ Raw ]### 
+                                                                                                                       load      = '\x03\x02\x03\\xf7\x00\x00\x00\x00E\\xc0\x01!'
+
