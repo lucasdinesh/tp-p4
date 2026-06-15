@@ -4,6 +4,16 @@
   "bmv2_json": "build/basic.json",
   "table_entries": [
     {
+    "table": "MyIngress.switch_id_table",
+    "match": {
+      "meta.dummy": 1
+      },
+    "action_name": "MyIngress.set_switch_id",
+    "action_params": {
+    "id": 2
+      }
+    },
+    {
       "table": "MyIngress.ipv4_lpm",
       "default_action": true,
       "action_name": "MyIngress.drop",

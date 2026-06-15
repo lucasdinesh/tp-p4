@@ -3,6 +3,7 @@
 #include <v1model.p4>
 
 const bit<16> TYPE_IPV4 = 0x800;
+const bit<8> PROTO_INT = 0xFD;
 
 /*************************************************************************
 *********************** H E A D E R S  ***********************************
@@ -33,13 +34,30 @@ header ipv4_t {
     ip4Addr_t dstAddr;
 }
 
+header int_pai_t{
+bit<32> Tamanho_Filho;
+bit<32> Quantidade_Filhos;
+}
+
+header int_filho_t{
+bit<32> ID_Switch;
+bit<9> Porta_Entrada;
+bit<9> Porta_Saida;
+bit<48> Timestamp;
+//* Another Headers *//
+bit<30> padding;
+}
+
 struct metadata {
-    /* empty */
+    bit<32> switch_id;
+    bit<1> dummy;
 }
 
 struct headers {
     ethernet_t   ethernet;
     ipv4_t       ipv4;
+    int_pai_t    int_pai;
+    int_filho_t[10]  int_filhos;      
 }
 
 /*************************************************************************
@@ -65,9 +83,31 @@ parser MyParser(packet_in packet,
 
     state parse_ipv4 {
         packet.extract(hdr.ipv4);
-        transition accept;
+            
+        transition select(hdr.ipv4.protocol) {
+            PROTO_INT: parse_int_pai;
+            default: accept;
+        }
     }
 
+    state parse_int_pai {
+        packet.extract(hdr.int_pai);
+
+        transition select(hdr.int_pai.Quantidade_Filhos) {
+            0: accept;
+            default: parse_int_filhos;
+        }
+    }
+
+    state parse_int_filhos {
+        packet.extract(hdr.int_filhos.next);
+
+        transition select(hdr.int_filhos.lastIndex + 1 < hdr.int_pai.Quantidade_Filhos) 
+        {
+            true: parse_int_filhos;
+            false: accept;
+        }
+    }
 }
 
 /*************************************************************************
@@ -97,6 +137,21 @@ control MyIngress(inout headers hdr,
         hdr.ipv4.ttl = hdr.ipv4.ttl - 1;
     }
 
+    action set_switch_id(bit<32> id) {
+        meta.switch_id = id;
+    }
+
+    table switch_id_table {
+        key = {
+            meta.dummy : exact;
+        }
+        actions = {
+            set_switch_id;
+            NoAction;
+        }
+        size = 1;
+    }
+    
     table ipv4_lpm {
         key = {
             hdr.ipv4.dstAddr: lpm;
@@ -110,10 +165,38 @@ control MyIngress(inout headers hdr,
         default_action = drop();
     }
 
-    apply {
-        if (hdr.ipv4.isValid()) {
-            ipv4_lpm.apply();
-        }
+apply {
+    meta.dummy = 1;
+    switch_id_table.apply();
+
+    if (hdr.ipv4.isValid()) {
+        ipv4_lpm.apply();
+    }
+
+    // INT inicialização (somente uma vez)
+    if (!hdr.int_pai.isValid()) {
+        hdr.int_pai.setValid();
+        hdr.int_pai.Tamanho_Filho = 128;
+        hdr.int_pai.Quantidade_Filhos = 0;
+
+        // primeiro hop conta como "pai + filho"
+        hdr.ipv4.totalLen = hdr.ipv4.totalLen + 24;
+    } else {
+        // hops seguintes
+        hdr.ipv4.totalLen = hdr.ipv4.totalLen + 16;
+    }
+
+    // INT sempre adiciona 1 filho por hop
+    hdr.int_filhos.push_front(1);
+    hdr.int_filhos[0].setValid();
+
+    hdr.int_filhos[0].ID_Switch = meta.switch_id;
+    hdr.int_filhos[0].Porta_Entrada = standard_metadata.ingress_port;
+    hdr.int_filhos[0].Porta_Saida = standard_metadata.egress_spec;
+    hdr.int_filhos[0].Timestamp = standard_metadata.ingress_global_timestamp;
+    hdr.int_filhos[0].padding = 0;
+
+    hdr.int_pai.Quantidade_Filhos = hdr.int_pai.Quantidade_Filhos + 1;
     }
 }
 
@@ -159,6 +242,9 @@ control MyDeparser(packet_out packet, in headers hdr) {
     apply {
         packet.emit(hdr.ethernet);
         packet.emit(hdr.ipv4);
+        packet.emit(hdr.int_pai);
+        packet.emit(hdr.int_filhos);
+
     }
 }
 
