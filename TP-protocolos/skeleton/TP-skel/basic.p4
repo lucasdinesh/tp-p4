@@ -3,6 +3,7 @@
 #include <v1model.p4>
 
 const bit<16> TYPE_IPV4 = 0x800;
+// Protocolo customizado para indicar a presença de telemetria INT
 const bit<8> PROTO_INT = 0xFD; // 253
 
 /*************************************************************************
@@ -34,14 +35,23 @@ header ipv4_t {
     ip4Addr_t dstAddr;
 }
 
+// --- ALTERAÇÃO: CABEÇALHO PAI (12 bytes no total) ---
 header int_pai_t {
     bit<32> Tamanho_Filho;
     bit<32> Quantidade_Filhos;
+    
+    // Salva o protocolo original (ex: TCP=6, UDP=17) para permitir a reconstrução 
+    // do pacote pelo script receive.py (Atende ao critério de separar o payload).
     bit<8>  proto_original; 
+    
+    // Flag do Requisito Bônus de MTU: 0 = Normal, 1 = Estouro de MTU (> 1500 bytes)
     bit<1>  estouro_mtu;
+    
+    // Reduzido para 23 bits para fechar exatos 32 bits junto com proto_original e estouro_mtu
     bit<23> padding;        
 }
 
+// --- CABEÇALHO FILHO (16 bytes no total) ---
 header int_filho_t {
     bit<32> ID_Switch;
     bit<9>  Porta_Entrada;
@@ -86,6 +96,7 @@ parser MyParser(packet_in packet,
     state parse_ipv4 {
         packet.extract(hdr.ipv4);
             
+        // Se o protocolo do IP for 253, sabemos que tem telemetria e chamamos o parse_int_pai
         transition select(hdr.ipv4.protocol) {
             PROTO_INT: parse_int_pai;
             default: accept;
@@ -104,6 +115,7 @@ parser MyParser(packet_in packet,
     state parse_int_filhos {
         packet.extract(hdr.int_filhos.next);
 
+        // Loop no parser: continua extraindo filhos até atingir a Quantidade_Filhos anotada no Pai
         transition select(hdr.int_filhos.lastIndex + 1 < hdr.int_pai.Quantidade_Filhos) 
         {
             true: parse_int_filhos;
@@ -172,31 +184,45 @@ control MyIngress(inout headers hdr,
         switch_id_table.apply();
 
         if (hdr.ipv4.isValid()) {
+            // Executa o roteamento L3 padrão
             ipv4_lpm.apply();
             
+            // --- ALTERAÇÃO: BYPASS DO PING ---
+            // Se o protocolo for 1 (ICMP), ignoramos a lógica INT. 
+            // Isso garante que o comando 'pingall' do Mininet funcione com 100% de sucesso.
             if (hdr.ipv4.protocol != 1) {
                 
+                // Variável para calcular o peso extra do cabeçalho | standard_metadata.packet_length é bit<32>
                 bit<32> tamanho_adicional = 0;
                 
+                // O primeiro switch injeta Pai (12 bytes) + Filho (16 bytes) = 28 bytes
+                // Switches seguintes injetam apenas o Filho = 16 bytes
                 if (!hdr.int_pai.isValid()) {
                     tamanho_adicional = 28; 
                 } else {
                     tamanho_adicional = 16; 
                 }
 
+                // --- ALTERAÇÃO: REQUISITO BÔNUS (LIMITE DE MTU) ---
+                // Verifica se o tamanho real do pacote no cabo + a nossa telemetria respeitam os 1500 bytes
                 if (standard_metadata.packet_length + tamanho_adicional <= 1500) {
                     
+                    // Inicia o cabeçalho Pai se for o primeiro salto
                     if (!hdr.int_pai.isValid()) {
                         hdr.int_pai.setValid();
-                        hdr.int_pai.Tamanho_Filho = 128;
+                        hdr.int_pai.Tamanho_Filho = 128; // Tamanho em bits de um filho
                         hdr.int_pai.Quantidade_Filhos = 0;
+                        
+                        // Salva o protocolo de transporte original antes de sobrescrever com 253
                         hdr.int_pai.proto_original = hdr.ipv4.protocol;
-                        hdr.int_pai.estouro_mtu = 0; // Inicia o alerta desligado
-                        hdr.ipv4.protocol = PROTO_INT;
+                        hdr.int_pai.estouro_mtu = 0; // Inicia a flag do MTU em falso
+                        hdr.ipv4.protocol = PROTO_INT; // Avisa a rede que este é um pacote INT
                     }
 
+                    // Faz o cast explícito para 16 bits exigido pela arquitetura do IPv4
                     hdr.ipv4.totalLen = hdr.ipv4.totalLen + (bit<16>)tamanho_adicional;
 
+                    // Empurra a pilha de filhos e insere os dados de telemetria do nó atual
                     hdr.int_filhos.push_front(1);
                     hdr.int_filhos[0].setValid();
                     hdr.int_filhos[0].ID_Switch = meta.switch_id;
@@ -208,6 +234,9 @@ control MyIngress(inout headers hdr,
                     hdr.int_pai.Quantidade_Filhos = hdr.int_pai.Quantidade_Filhos + 1;
                     
                 } else {
+                    // --- ALTERAÇÃO: ESTOURO DE MTU DETECTADO ---
+                    // O pacote bateria no MTU. Se ele já tiver telemetria iniciada, nós apenas 
+                    // levantamos a flag de alerta, mas NÃO adicionamos nosso salto para não corromper o pacote.
                     if (hdr.int_pai.isValid()) {
                         hdr.int_pai.estouro_mtu = 1;
                     }
